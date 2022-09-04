@@ -38,7 +38,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.DEPLOYER_ROLE_ARN }}
+          role-to-assume: ${{ secrets.CLOUD87_ECR_PUSH_ROLE_ARN }}
           role-session-name: Cloud87DockerDummyHttpGHA
           aws-region: us-east-1
 
